@@ -39,17 +39,17 @@ export default function LoginScreen({navigation}) {
 
     return <View style={{flex:1, justifyContent:"center", alignItems:"center"}}>
         <Text style={{fontSize: 20, fontWeight: "bold"}}>Login</Text>
-        {/* <TextInput
+        <TextInput
             onChangeText={setEmail}
             placeholder="Email"
             style={styles.textInput}
-        /> */}
-        {/* <TextInput
+        />
+        <TextInput
             onChangeText={setPassword}
             placeholder="Password"
             secureTextEntry
             style={styles.textInput}
-        /> */}
+        />
         <Button title="Login" onPress={handleLogin} />
         {error && <Text style={{color:"red"}}>{error}</Text>}
         <Text onPress={goToRegister} style={{marginVertical: 10}}>
